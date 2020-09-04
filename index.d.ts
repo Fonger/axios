@@ -68,6 +68,7 @@ export interface AxiosRequestConfig {
   socketPath?: string | null;
   httpAgent?: any;
   httpsAgent?: any;
+  lookup?: (...args: any[]) => void;
   proxy?: AxiosProxyConfig | false;
   cancelToken?: CancelToken;
   decompress?: boolean;
